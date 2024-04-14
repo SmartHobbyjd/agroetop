@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useRouter } from 'next/router';
 import { useDispatch } from 'react-redux'; 
-import { loginUser } from '@/utils/api';
-import { loginSuccess } from '@/stores/authSlice';
 import YoutubeEmbed from '@/components/YoutubeEmbed';
+import dynamic from 'next/dynamic';
+
+// Dynamically import the LoginForm component to ensure it's only rendered on the client side
+const LoginForm = dynamic(() => import('@/app/login/LoginFrom'), { ssr: false });
 
 const LoginPage = () => {
   return (
@@ -13,10 +15,10 @@ const LoginPage = () => {
           <YoutubeEmbed videoId="NfH6H_3eq58?si=QO4_YeV-oyhwIV5m" />  
         </div>
         <div className="flex-1">
-          <div className="card bg-white shadow-md rounded-lg px-5 py-4">  {/* Card styling */}
+          <div className="card bg-white shadow-md rounded-lg px-5 py-4">
             <div className="card-header">
-              <h1>Title</h1>
-              <p>Subtitle</p> 
+              <h1>Agro World</h1>
+              <p>Lets make great deals</p> 
             </div>
             <div className="card-body">
               <LoginForm />
@@ -31,4 +33,4 @@ const LoginPage = () => {
   );
 };
 
-
+export default LoginPage;

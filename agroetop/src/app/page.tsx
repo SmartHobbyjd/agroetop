@@ -11,12 +11,12 @@ export default function Home() {
         <div className="flex-1">
           <div className="card shadow-md rounded-lg px-5 py-4">
             <div className="card-header">
-              <h1 className="bg-ice-100 text-ice-800">Title</h1>
-              <p className="bg-ice-100 text-ice-800">Subtitle</p> 
+              <h1 className="bg-ice-100 text-ice-800">Agro World</h1>
+              <p className="bg-ice-100 text-ice-800">Let's make great deals</p> 
             </div>
       <section className="bg-ice-100 text-ice-800"> 
   <div className="container mx-auto py-16 flex flex-col items-center">
-    <h1 className="text-4xl font-bold mb-4">Agroetop</h1> 
+    <h1 className="text-4xl font-bold mb-4">Agro é Top</h1> 
     <p className="text-lg mb-8">Your Modern Agricultural Solution</p>
     <div className="flex space-x-4">
       <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Login</button>
